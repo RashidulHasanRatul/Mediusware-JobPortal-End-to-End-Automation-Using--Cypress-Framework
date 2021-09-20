@@ -6,6 +6,8 @@ export default class Loginpage {
     password = '.input-group > .form-control'
     submitbtn= '.login-btn';
 
+    DashBoard='.nav-link btn-bg' ;
+
     navigate(){
         cy.visit(this.url);
     }
@@ -20,6 +22,11 @@ export default class Loginpage {
 
     submit(){
        return cy.get(this.submitbtn).click();
+    }
+
+    Dashboradbtn(){
+        return cy.get(':nth-child(3) > .nav-link');
+
     }
 
 
