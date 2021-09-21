@@ -1,10 +1,10 @@
 /// <reference types="cypress"/>
 
 import Loginpage from "../../../Pages/LoginPage/Login";
-// import  Dashboard  from "../../../Pages/DashBoardPage/dashboard";
+import  Dashboard  from "../../../Pages/DashBoardPage/dashboard";
 
 const login = new Loginpage();
-// const dash = new Dashboard();
+const dash = new Dashboard();
 
 describe("Dashboard Testing",()=>{
 
@@ -13,7 +13,7 @@ describe("Dashboard Testing",()=>{
         login.username();
         login.pass();
         login.submit();
-        cy.wait(2000);
+        cy.wait(3000);
         
     })
 
@@ -22,6 +22,10 @@ describe("Dashboard Testing",()=>{
         
     })
 
+    it("Welcome Message is Show or Not ",()=>{
+        cy.wait(3000);
+        cy.get('.welcome-section').should('have.text', ' Welcome to Candidate ');
+    })
 
 
 
