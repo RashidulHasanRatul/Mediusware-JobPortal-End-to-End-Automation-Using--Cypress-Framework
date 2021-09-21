@@ -5,9 +5,6 @@ export default class Loginpage {
     uname="#email";
     password = '.input-group > .form-control'
     submitbtn= '.login-btn';
-
-    DashBoard='.nav-link btn-bg' ;
-
     navigate(){
         cy.visit(this.url);
     }
