@@ -5,12 +5,15 @@ export default class Loginpage {
     uname="#email";
     password = '.input-group > .form-control'
     submitbtn= '.login-btn';
+    
+
+
     navigate(){
         cy.visit(this.url);
     }
 
     username(){
-        cy.get(this.uname).type("rhratul12@gmail.com");
+        cy.get(this.uname).type("rashidulmediusware@gmail.com");
     }
 
     pass(){
@@ -25,6 +28,10 @@ export default class Loginpage {
         return cy.get(':nth-child(3) > .nav-link');
 
     }
+
+ 
+
+
 
 
 

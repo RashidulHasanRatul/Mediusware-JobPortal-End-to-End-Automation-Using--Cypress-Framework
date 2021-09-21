@@ -12,12 +12,15 @@ describe("Login Page",function(){
         login.pass();
         login.submit();
         cy.url().should("be.eq","https://job.mediusware.com/");
+        login.Dashboradbtn().click();
 
     })
 
     it("Verify Dashboard Button is Visible or not",()=>{
       login.Dashboradbtn().should('be.visible');
     })
+
+
 
     console.log("Hey");
 
