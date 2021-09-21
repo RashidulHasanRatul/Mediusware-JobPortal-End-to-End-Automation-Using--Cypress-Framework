@@ -12,7 +12,7 @@ describe("Login Page",function(){
         login.pass();
         login.submit();
         cy.url().should("be.eq","https://job.mediusware.com/");
-        login.Dashboradbtn().click();
+        // login.Dashboradbtn().click();
 
     })
 
