@@ -18,19 +18,21 @@ describe("Dashboard Testing",()=>{
     })
 
 
-    it("Verify Dashboard Button is Visible or not",()=>{
-        login.Dashboradbtn().should('be.visible');
-      })
-
     it("Dashboard Button Click",()=>{
         login.Dashboradbtn().click();
         
     })
 
+    
+    it("Verify Dashboard Button is Visible or not",()=>{
+        login.Dashboradbtn().should('be.visible');
+      })
+
+
     it("Welcome Message is Show or Not ",()=>{
         cy.wait(3000);
-        cy.get('.welcome-section > :nth-child(2) > span').should('have.text', ' Welcome to Candidate ');
-       
+        dash.wellcomemsg().should('have.text', ' Welcome to Candidate ');
+        // cy.log(dash.welcomeMessage());
     })
 
 
