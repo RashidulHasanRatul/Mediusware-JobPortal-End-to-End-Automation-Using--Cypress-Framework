@@ -1,6 +1,6 @@
 /// <reference types="cypress"/>
 
-import { reduceRight } from "cypress/types/lodash";
+
 
 export default class LaravelMCQ {
 
