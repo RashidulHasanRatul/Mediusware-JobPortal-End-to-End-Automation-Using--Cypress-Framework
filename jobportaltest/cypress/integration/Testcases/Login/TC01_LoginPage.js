@@ -16,15 +16,6 @@ describe("Login Page",function(){
 
     })
 
-    it("Verify Dashboard Button is Visible or not",()=>{
-      login.Dashboradbtn().should('be.visible');
-    })
-
-
-
-    console.log("Hey");
-
-
 
 })
 

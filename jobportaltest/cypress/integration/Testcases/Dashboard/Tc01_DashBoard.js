@@ -17,6 +17,11 @@ describe("Dashboard Testing",()=>{
         
     })
 
+
+    it("Verify Dashboard Button is Visible or not",()=>{
+        login.Dashboradbtn().should('be.visible');
+      })
+
     it("Dashboard Button Click",()=>{
         login.Dashboradbtn().click();
         
@@ -24,7 +29,8 @@ describe("Dashboard Testing",()=>{
 
     it("Welcome Message is Show or Not ",()=>{
         cy.wait(3000);
-        cy.get('.welcome-section').should('have.text', ' Welcome to Candidate ');
+        cy.get('.welcome-section > :nth-child(2) > span').should('have.text', ' Welcome to Candidate ');
+       
     })
 
 
