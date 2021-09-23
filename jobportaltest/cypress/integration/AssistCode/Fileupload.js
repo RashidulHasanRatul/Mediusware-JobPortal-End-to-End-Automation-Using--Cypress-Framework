@@ -3,7 +3,7 @@ import 'cypress-file-upload';
 
 describe("All About Fileupload", () => {
 
-    it.skip('Single File upload', function () {
+    it('Single File upload', function () {
         cy.visit('http://automationpractice.com/index.php?controller=contact');
 
         const imgpath = 'Asset/Birds.jpeg';
@@ -13,7 +13,7 @@ describe("All About Fileupload", () => {
 
     });
 
-    it.skip('Drag And Drop File Upload', function () {
+    it('Drag And Drop File Upload', function () {
         cy.visit('https://css-tricks.com/examples/DragAndDropFileUploading/');
 
         const imgpath = 'Asset/Birds.jpeg';
@@ -24,7 +24,7 @@ describe("All About Fileupload", () => {
 
     });
 
-    it.only('Multiple File Upload', function () {
+    it('Multiple File Upload', function () {
         cy.visit('https://davidwalsh.name/demo/multiple-file-upload.php');
 
         const img1 = 'Asset/Birds.jpeg';
