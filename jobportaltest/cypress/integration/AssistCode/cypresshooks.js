@@ -1,7 +1,7 @@
 describe("All About Cypress Hooks",()=>{
 
     before(function () {
-        cy.log("This is Setup block")
+        cy.log("This is Setup/Load Data from outside  block")
     });
     
     after(function () {
@@ -9,11 +9,11 @@ describe("All About Cypress Hooks",()=>{
     })
     
     beforeEach(function () {
-        cy.log("")
+        cy.log("This is Login Block")
     })
     
     afterEach(function () {
-        
+        cy.log("Thi is Logout Block")
     })
 
     
