@@ -1,0 +1,28 @@
+To Open Test Runner 
+==============================
+npx cypress open 
+
+================================
+
+To Run All the test under Specific Directory 
+
+=============================================
+
+node_modules\.bin\cypress run 
+
+node_modules\.bin\cypress run -- headed
+
+===================================
+
+Specific Test Case  Run 
+=================================
+node_modules\.bin\cypress run  --spec cypress\integration\TestCase\Tc01_LoginTestcase.js
+
+Run all the TestCase under Specific Directory using chrome Browser 
+============================================
+
+node_modules\.bin\cypress run  -- browser chrome 
+
+===================================================
+
+

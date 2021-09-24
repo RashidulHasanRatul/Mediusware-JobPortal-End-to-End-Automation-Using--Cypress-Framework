@@ -1,0 +1,22 @@
+// Title Verification 
+cy.title().should('eq','Actual title should be here');
+
+
+// assert some Element is Visible or Not 
+cy.get("tesdf").should("be.Visible")
+
+
+// assert some Element is enabled or Not 
+cy.get("tesdf").should("be.enabled")
+
+
+// Radio Button assert (Positive Condition)
+cy.get("tesdf").should("be.Visible").should('be.checked')
+
+// Radio Button assert (Negative Condition)
+cy.get("tesdf").should("be.Visible").should('not.be.checked');
+
+// Value is Present or not Assert and Check The Radio Button
+cy.get('#checkbox1').check().should("be.checked").and("have.value","Cricket");
+
+
