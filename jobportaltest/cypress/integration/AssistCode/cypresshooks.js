@@ -16,11 +16,7 @@ describe("All About Cypress Hooks",()=>{
         cy.log("Thi is Logout Block")
     })
 
-    
-    
-    
-    
-    
+
     it('Searching Test ', function () {
         cy.log("This is Searching Test");
     });
