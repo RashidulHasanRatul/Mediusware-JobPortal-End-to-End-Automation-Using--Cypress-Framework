@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-09-27T13:23:53.603Z",
+    "end": "2021-09-27T13:24:00.206Z",
+    "duration": 6603,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "003f8134-f0d1-439c-893c-7a5354b449ac",
+      "title": "",
+      "fullFile": "cypress/integration/Testcases/Login/TC01_LoginPage.js",
+      "file": "cypress/integration/Testcases/Login/TC01_LoginPage.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fa02d35a-7e92-4a80-9ace-5ec09a92cc19",
+          "title": "Login Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login To Application",
+              "fullTitle": "Login Page Login To Application",
+              "timedOut": null,
+              "duration": 5123,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login('rashidulmediusware@gmail.com', '123456');",
+              "err": {},
+              "uuid": "6e3ac689-ed8d-432b-a746-dcb2b802e756",
+              "parentUUID": "fa02d35a-7e92-4a80-9ace-5ec09a92cc19",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6e3ac689-ed8d-432b-a746-dcb2b802e756"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5123,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

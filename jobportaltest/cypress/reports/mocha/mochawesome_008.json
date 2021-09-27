@@ -1,0 +1,202 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-09-27T13:23:42.025Z",
+    "end": "2021-09-27T13:23:49.155Z",
+    "duration": 7130,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "949330ff-ce35-4e57-b240-5deb9f881151",
+      "title": "",
+      "fullFile": "cypress/integration/Testcases/HomePageTest/TC01_homePage.js",
+      "file": "cypress/integration/Testcases/HomePageTest/TC01_homePage.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e62bc70a-d11b-4dcb-ba5e-4efe0169258c",
+          "title": "HomePage Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify Homepage Title",
+              "fullTitle": "HomePage Test Verify Homepage Title",
+              "timedOut": null,
+              "duration": 5425,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.navigateURL();\ncy.title().should('eq', \"Home\");",
+              "err": {},
+              "uuid": "28853d19-7d36-44e6-bd78-191b80b66d04",
+              "parentUUID": "e62bc70a-d11b-4dcb-ba5e-4efe0169258c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Url is correct or Not ",
+              "fullTitle": "HomePage Test Verify Url is correct or Not ",
+              "timedOut": null,
+              "duration": 17,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.url().should('include', 'job.mediusware.com');",
+              "err": {},
+              "uuid": "ff27cab6-de71-4a31-bb10-8e41a1b061ad",
+              "parentUUID": "e62bc70a-d11b-4dcb-ba5e-4efe0169258c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify HomePageLogo/Icon is Visible or Not ",
+              "fullTitle": "HomePage Test Verify HomePageLogo/Icon is Visible or Not ",
+              "timedOut": null,
+              "duration": 99,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.logoAndIcon().should('be.visible');",
+              "err": {},
+              "uuid": "1af4b2dc-67c5-46dd-9a20-cd154f15c312",
+              "parentUUID": "e62bc70a-d11b-4dcb-ba5e-4efe0169258c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Back to Home Button is Visible or Not ",
+              "fullTitle": "HomePage Test Verify Back to Home Button is Visible or Not ",
+              "timedOut": null,
+              "duration": 23,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.backToHomebtn().should('be.visible');",
+              "err": {},
+              "uuid": "d4f2d5cc-3580-479b-bc30-2f5b89ec8a17",
+              "parentUUID": "e62bc70a-d11b-4dcb-ba5e-4efe0169258c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify ContactUS Button is Visible or Not ",
+              "fullTitle": "HomePage Test Verify ContactUS Button is Visible or Not ",
+              "timedOut": null,
+              "duration": 19,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.contactUsBtn().should('be.visible');",
+              "err": {},
+              "uuid": "7e80095c-505b-4d89-9176-f2f14db0f156",
+              "parentUUID": "e62bc70a-d11b-4dcb-ba5e-4efe0169258c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Login Button is Visible or Not ",
+              "fullTitle": "HomePage Test Verify Login Button is Visible or Not ",
+              "timedOut": null,
+              "duration": 17,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.loginBTN().should('be.visible');",
+              "err": {},
+              "uuid": "bf12c56b-0c15-4f6b-8fe9-614d1c49a5e1",
+              "parentUUID": "e62bc70a-d11b-4dcb-ba5e-4efe0169258c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "28853d19-7d36-44e6-bd78-191b80b66d04",
+            "ff27cab6-de71-4a31-bb10-8e41a1b061ad",
+            "1af4b2dc-67c5-46dd-9a20-cd154f15c312",
+            "d4f2d5cc-3580-479b-bc30-2f5b89ec8a17",
+            "7e80095c-505b-4d89-9176-f2f14db0f156",
+            "bf12c56b-0c15-4f6b-8fe9-614d1c49a5e1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5600,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

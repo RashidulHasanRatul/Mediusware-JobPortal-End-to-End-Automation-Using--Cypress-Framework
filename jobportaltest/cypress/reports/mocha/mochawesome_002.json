@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-09-27T13:21:34.336Z",
+    "end": "2021-09-27T13:22:02.971Z",
+    "duration": 28635,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a49b355f-1250-4642-b830-a9c28ffa7c40",
+      "title": "",
+      "fullFile": "cypress/integration/AssistCode/Fileupload.js",
+      "file": "cypress/integration/AssistCode/Fileupload.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "82802da4-e5eb-42ff-b7cc-af916b9b60ce",
+          "title": "All About Fileupload",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Single File upload",
+              "fullTitle": "All About Fileupload Single File upload",
+              "timedOut": null,
+              "duration": 10091,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://automationpractice.com/index.php?controller=contact');\nconst imgpath = 'Asset/Birds.jpeg';\ncy.get('#fileUpload').attachFile(imgpath);",
+              "err": {},
+              "uuid": "3cfd36e5-751b-4666-84f6-ba97d0b68f7d",
+              "parentUUID": "82802da4-e5eb-42ff-b7cc-af916b9b60ce",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Drag And Drop File Upload",
+              "fullTitle": "All About Fileupload Drag And Drop File Upload",
+              "timedOut": null,
+              "duration": 4056,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://css-tricks.com/examples/DragAndDropFileUploading/');\nconst imgpath = 'Asset/Birds.jpeg';\ncy.get('#file').attachFile(imgpath); //Assertion Done Message is Show or Not\ncy.get('.box__success').should('contain.text', 'Done! Upload more?');",
+              "err": {},
+              "uuid": "f3274ad9-64b1-40cf-b243-03bd83956b19",
+              "parentUUID": "82802da4-e5eb-42ff-b7cc-af916b9b60ce",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Multiple File Upload",
+              "fullTitle": "All About Fileupload Multiple File Upload",
+              "timedOut": null,
+              "duration": 4289,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://davidwalsh.name/demo/multiple-file-upload.php');\nconst img1 = 'Asset/Birds.jpeg';\nconst img2 = 'Asset/sampletext.txt';\ncy.get('#filesToUpload').attachFile([img1, img2]); //Assertion Done Message is Show or Not\n// cy.get('.box__success').should('contain.text','Done! Upload more?');",
+              "err": {},
+              "uuid": "5162a3ee-bd43-4737-8307-aac2cad783aa",
+              "parentUUID": "82802da4-e5eb-42ff-b7cc-af916b9b60ce",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3cfd36e5-751b-4666-84f6-ba97d0b68f7d",
+            "f3274ad9-64b1-40cf-b243-03bd83956b19",
+            "5162a3ee-bd43-4737-8307-aac2cad783aa"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 18436,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

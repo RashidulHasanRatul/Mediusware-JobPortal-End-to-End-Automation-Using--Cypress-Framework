@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-09-27T13:22:43.611Z",
+    "end": "2021-09-27T13:22:58.310Z",
+    "duration": 14699,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "77ec8b8f-71ee-4740-a0ad-c5998f9b7348",
+      "title": "",
+      "fullFile": "cypress/integration/Testcases/Application/TC01_Application.js",
+      "file": "cypress/integration/Testcases/Application/TC01_Application.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cabbff65-f363-494c-a87b-70582c57f916",
+          "title": "Application Page Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Goto Dashboard Page",
+              "fullTitle": "Application Page Test Goto Dashboard Page",
+              "timedOut": null,
+              "duration": 10383,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.navigate();\nlogin.username();\nlogin.pass();\nlogin.submit();\ncy.wait(4000);\nlogin.Dashboradbtn().click();",
+              "err": {},
+              "uuid": "4eaa0c83-d074-4f4c-a539-43acc12a19fe",
+              "parentUUID": "cabbff65-f363-494c-a87b-70582c57f916",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Click on Application Button",
+              "fullTitle": "Application Page Test Click on Application Button",
+              "timedOut": null,
+              "duration": 780,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "application.clickapplication().click();",
+              "err": {},
+              "uuid": "b8e78220-c555-403d-b3cd-7a8959ac3160",
+              "parentUUID": "cabbff65-f363-494c-a87b-70582c57f916",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": " verify  Job application history Section is visible or Not ",
+              "fullTitle": "Application Page Test  verify  Job application history Section is visible or Not ",
+              "timedOut": null,
+              "duration": 1117,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "application.jobapplicationHistory().should('have.text', \"Job application history\");",
+              "err": {},
+              "uuid": "3eee945f-5cc4-4851-8882-1205a673d492",
+              "parentUUID": "cabbff65-f363-494c-a87b-70582c57f916",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4eaa0c83-d074-4f4c-a539-43acc12a19fe",
+            "b8e78220-c555-403d-b3cd-7a8959ac3160",
+            "3eee945f-5cc4-4851-8882-1205a673d492"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12280,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

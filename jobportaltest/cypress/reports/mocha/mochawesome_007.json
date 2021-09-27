@@ -1,0 +1,150 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-09-27T13:23:20.014Z",
+    "end": "2021-09-27T13:23:36.673Z",
+    "duration": 16659,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e7b359c8-699b-4386-85be-b16e306064b8",
+      "title": "",
+      "fullFile": "cypress/integration/Testcases/ExaminationTest/TC01_LaravelMCQTest.js",
+      "file": "cypress/integration/Testcases/ExaminationTest/TC01_LaravelMCQTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "686d1a70-3748-4f7d-9812-74feebf780b7",
+          "title": "Dashboard Testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Goto Dashboard Page",
+              "fullTitle": "Dashboard Testing Goto Dashboard Page",
+              "timedOut": null,
+              "duration": 8032,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.navigate();\nlogin.username();\nlogin.pass();\nlogin.submit();\ncy.wait(3000);\nlogin.Dashboradbtn().click();",
+              "err": {},
+              "uuid": "42642cab-9407-418e-a03e-b3b3f5fcc246",
+              "parentUUID": "686d1a70-3748-4f7d-9812-74feebf780b7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Click on Examination Button",
+              "fullTitle": "Dashboard Testing Click on Examination Button",
+              "timedOut": null,
+              "duration": 1369,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "mcq.clickExaminationBTN().click();",
+              "err": {},
+              "uuid": "8fb63245-fe24-44de-ba93-4078cb37034e",
+              "parentUUID": "686d1a70-3748-4f7d-9812-74feebf780b7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Click on Start Exam",
+              "fullTitle": "Dashboard Testing Click on Start Exam",
+              "timedOut": null,
+              "duration": 5414,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/Testcases/ExaminationTest/TC01_LaravelMCQTest.js/Dashboard Testing -- Click on Start Exam (failed).png\"",
+              "code": "mcq.clickonStartExam().click({\n  multiple: true\n});\ncy.wait(3000);\nmcq.startExam().click();",
+              "err": {
+                "message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 2 elements. Pass `{ multiple: true }` if you want to serially click each element.\n\nhttps://on.cypress.io/click",
+                "estack": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 2 elements. Pass `{ multiple: true }` if you want to serially click each element.\n\nhttps://on.cypress.io/click\n    at mouseAction (https://job.mediusware.com/__cypress/runner/cypress_runner.js:149801:76)\n    at Context.click (https://job.mediusware.com/__cypress/runner/cypress_runner.js:149980:14)\n    at Context.<anonymous> (https://job.mediusware.com/__cypress/runner/cypress_runner.js:169833:23)\nFrom Your Spec Code:\n    at Context.eval (https://job.mediusware.com/__cypress/tests?p=cypress\\integration\\Testcases\\ExaminationTest\\TC01_LaravelMCQTest.js:264:21)",
+                "diff": null
+              },
+              "uuid": "8997aaa3-2435-4a30-965a-f7f8ee2e902b",
+              "parentUUID": "686d1a70-3748-4f7d-9812-74feebf780b7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "42642cab-9407-418e-a03e-b3b3f5fcc246",
+            "8fb63245-fe24-44de-ba93-4078cb37034e"
+          ],
+          "failures": [
+            "8997aaa3-2435-4a30-965a-f7f8ee2e902b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 14815,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

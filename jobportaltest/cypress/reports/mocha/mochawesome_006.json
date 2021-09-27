@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-09-27T13:23:03.249Z",
+    "end": "2021-09-27T13:23:15.647Z",
+    "duration": 12398,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "295e9163-f82c-4b76-9cb3-9099102da95b",
+      "title": "",
+      "fullFile": "cypress/integration/Testcases/Dashboard/Tc01_DashBoard.js",
+      "file": "cypress/integration/Testcases/Dashboard/Tc01_DashBoard.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2c21a09f-fde9-467a-95fd-5fa270e9b8ef",
+          "title": "Dashboard Testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Goto Dashboard Page",
+              "fullTitle": "Dashboard Testing Goto Dashboard Page",
+              "timedOut": null,
+              "duration": 7687,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login('rashidulmediusware@gmail.com', '123456');\ncy.wait(3000);",
+              "err": {},
+              "uuid": "c741b75b-ce58-402b-8510-9972d64f45d8",
+              "parentUUID": "2c21a09f-fde9-467a-95fd-5fa270e9b8ef",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Dashboard Button Click",
+              "fullTitle": "Dashboard Testing Dashboard Button Click",
+              "timedOut": null,
+              "duration": 115,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.Dashboradbtn().click();",
+              "err": {},
+              "uuid": "7406094d-eab1-4ae5-a827-57b7866a8020",
+              "parentUUID": "2c21a09f-fde9-467a-95fd-5fa270e9b8ef",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Dashboard Button is Visible or not",
+              "fullTitle": "Dashboard Testing Verify Dashboard Button is Visible or not",
+              "timedOut": null,
+              "duration": 21,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.Dashboradbtn().should('be.visible');",
+              "err": {},
+              "uuid": "c64ab8ee-f64f-4167-b72d-60a0cc45858b",
+              "parentUUID": "2c21a09f-fde9-467a-95fd-5fa270e9b8ef",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Welcome Message is Show or Not ",
+              "fullTitle": "Dashboard Testing Welcome Message is Show or Not ",
+              "timedOut": null,
+              "duration": 3022,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.wait(3000);\ndash.wellcomemsg().should('have.text', ' Welcome to Candidate '); // cy.log(dash.welcomeMessage());",
+              "err": {},
+              "uuid": "c96e311a-ad65-4216-a065-fae73f8792ad",
+              "parentUUID": "2c21a09f-fde9-467a-95fd-5fa270e9b8ef",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c741b75b-ce58-402b-8510-9972d64f45d8",
+            "7406094d-eab1-4ae5-a827-57b7866a8020",
+            "c64ab8ee-f64f-4167-b72d-60a0cc45858b",
+            "c96e311a-ad65-4216-a065-fae73f8792ad"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10845,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

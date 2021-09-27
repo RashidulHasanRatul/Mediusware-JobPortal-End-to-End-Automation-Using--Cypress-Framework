@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-09-27T13:24:21.064Z",
+    "end": "2021-09-27T13:24:38.007Z",
+    "duration": 16943,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "54626f3f-ab78-4ba1-a94e-5be9936a73d0",
+      "title": "",
+      "fullFile": "cypress/integration/Testcases/SettingTest/TC01_PasswordChange.js",
+      "file": "cypress/integration/Testcases/SettingTest/TC01_PasswordChange.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ebcd963e-e00f-40a5-a7ba-a80d6570d5c9",
+          "title": "Change Password ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login Application  ",
+              "fullTitle": "Change Password  Login Application  ",
+              "timedOut": null,
+              "duration": 14695,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Login from Custom command Page\ncy.login('rashidulmediusware@gmail.com', '123456');\ncy.wait(3000);\nlogin.Dashboradbtn().click();\ncy.wait(3000);",
+              "err": {},
+              "uuid": "58fed1fb-cb6a-49a3-a2c2-2c5c5e22a1e9",
+              "parentUUID": "ebcd963e-e00f-40a5-a7ba-a80d6570d5c9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should Click Setting Button",
+              "fullTitle": "Change Password  should Click Setting Button",
+              "timedOut": null,
+              "duration": 110,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "acinfo.clickOnSettingButton().click();",
+              "err": {},
+              "uuid": "94d99d63-0710-4d5c-9c22-b8c836635b01",
+              "parentUUID": "ebcd963e-e00f-40a5-a7ba-a80d6570d5c9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Click on Change Pass",
+              "fullTitle": "Change Password  Click on Change Pass",
+              "timedOut": null,
+              "duration": 636,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "changePassword.changePass().click();",
+              "err": {},
+              "uuid": "de6aee32-45b3-499f-b9ec-3891e85c7df1",
+              "parentUUID": "ebcd963e-e00f-40a5-a7ba-a80d6570d5c9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "58fed1fb-cb6a-49a3-a2c2-2c5c5e22a1e9",
+            "94d99d63-0710-4d5c-9c22-b8c836635b01",
+            "de6aee32-45b3-499f-b9ec-3891e85c7df1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 15441,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

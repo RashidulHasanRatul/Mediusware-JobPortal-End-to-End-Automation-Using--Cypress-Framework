@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-09-27T13:22:09.525Z",
+    "end": "2021-09-27T13:22:22.466Z",
+    "duration": 12941,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a8ad9016-e992-467b-a820-7223313e3485",
+      "title": "",
+      "fullFile": "cypress/integration/AssistCode/ScreenShoot.js",
+      "file": "cypress/integration/AssistCode/ScreenShoot.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2ef9fa29-8eaf-4406-a2cc-1e1cab222e48",
+          "title": "ScreenShot",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Screenshot using default",
+              "fullTitle": "ScreenShot Screenshot using default",
+              "timedOut": null,
+              "duration": 10865,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://www.cypress.io/\");\ncy.screenshot();",
+              "err": {},
+              "uuid": "1b18508f-befa-4669-82fd-30045855367d",
+              "parentUUID": "2ef9fa29-8eaf-4406-a2cc-1e1cab222e48",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1b18508f-befa-4669-82fd-30045855367d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10865,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
