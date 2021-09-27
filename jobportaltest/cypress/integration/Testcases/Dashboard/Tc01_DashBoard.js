@@ -9,13 +9,11 @@ const dash = new Dashboard();
 describe("Dashboard Testing",()=>{
 
     it("Goto Dashboard Page",()=>{
-        login.navigate();
-        login.username();
-        login.pass();
-        login.submit();
+        cy.login('rashidulmediusware@gmail.com','123456');
         cy.wait(3000);
         
     })
+
 
 
     it("Dashboard Button Click",()=>{
