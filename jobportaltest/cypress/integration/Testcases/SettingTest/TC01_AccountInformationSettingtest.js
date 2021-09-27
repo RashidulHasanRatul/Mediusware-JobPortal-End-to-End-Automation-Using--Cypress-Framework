@@ -10,12 +10,13 @@ const acinfo = new AccountInformation();
 
 describe("Account Information", () => {
     it("Verify Successfully Login or Not ", () => {
-        login.navigate();
-        login.username();
-        login.pass();
-        login.submit();
+
+        // Login from Custom command Page
+        cy.login('rashidulmediusware@gmail.com', '123456');
+
         cy.url().should("be.eq", "https://job.mediusware.com/");
         login.Dashboradbtn().click();
+
 
     })
 
@@ -50,14 +51,13 @@ describe("Account Information", () => {
     });
 
     it('Click on Save Button', function () {
-       acinfo.saveButton().click();
+        acinfo.saveButton().click();
 
     });
 
     it('After save Account information Confirmation should be Show', function () {
-        acinfo.succesfullySaveMsg().should('contain.text','Your profile has been saved successfully');
+        acinfo.succesfullySaveMsg().should('contain.text', 'Your profile has been saved successfully');
     });
-
 
 
 })
