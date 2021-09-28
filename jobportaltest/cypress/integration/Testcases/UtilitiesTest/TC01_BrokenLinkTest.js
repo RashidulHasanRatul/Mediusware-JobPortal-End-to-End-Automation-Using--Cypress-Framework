@@ -1,10 +1,10 @@
-import config from '../../../cypress.json'
+import config from '../../../../cypress.json'
 
-describe('Test Broken Links', () => {
+describe('Test Mediusware  Broken Links', () => {
 
     it('verify navigation accross the pages', () =>{
 
-        cy.visit(`${config.URL2}`)
+        cy.visit(`${config.URL1}`)
 
         // for handle uncaught exception
         cy.on('window:confirm', cy.stub().as('confirm'))
