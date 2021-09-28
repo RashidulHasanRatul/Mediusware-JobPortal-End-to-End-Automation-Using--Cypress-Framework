@@ -76,5 +76,5 @@ Cypress.on("test:after:run", (test, runnable) => {
 
 step : 5
 
-for run : cypress run 
+for run : cypress run
 

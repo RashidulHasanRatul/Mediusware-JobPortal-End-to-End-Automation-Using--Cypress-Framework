@@ -1,7 +1,8 @@
 {
   "video": true,
-
+  "watchForFilesChanges": false,
   "reporter": "cypress-multi-reporters",
+  "waitForAnimation": true,
   "reporterOptions": {
     "reporterEnabled": "mochawesome",
     "mochawesomeReporterOptions": {
@@ -11,7 +12,9 @@
       "html": false,
       "json": true
     }
-  }
+  },
+  "URL1": "https://job.mediusware.com/",
+  "URL2": "https://www.lambdatest-playground.com"
 
 }
 
